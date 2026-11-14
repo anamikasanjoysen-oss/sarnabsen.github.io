@@ -1,352 +1,704 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarnab Sen | Official Author Website - The Literary World of Sarnab Sen</title>
-    <meta name="description" content="Official author website of Sarnab Sen. Explore all seven published books on mathematics, mythology, Shakespeare, and children's learning available on Amazon." />
-    <meta name="keywords" content="Sarnab Sen, Sarnab Sen Author, Sarnab Sen Author Website, Sarnab Sen Books, The Literary World of Sarnab Sen, Maths 5.0, Maths 4.0, Krishna Trilogy Born of Blue, Julius Caesar Shakespeare in Simple English" />
-    <meta name="author" content="Sarnab Sen" />
-    <link rel="canonical" href="https://anamikasanjoysen-oss.github.io/sarnabsen.github.io/" />
-    
-    <!-- Open Graph / Social Sharing Metadata -->
-    <meta property="og:title" content="The Literary World of Sarnab Sen | Official Author Website" />
-    <meta property="og:description" content="Seven Books. Countless Ideas. One World of Imagination. Discover the published works of Sarnab Sen." />
-    <meta property="og:url" content="https://anamikasanjoysen-oss.github.io/sarnabsen.github.io/" />
-    <meta property="og:type" content="website" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Literary World of Sarnab Sen | Author Portfolio</title>
+  <meta name="description" content="Official author website of Sarnab Sen. Explore educational mathematics companions, mythological fiction, Shakespeare adaptations, and curated knowledge collections.">
+  <meta name="keywords" content="Sarnab Sen, Sarnab Sen Author Website, Maths 5.0, Maths 4.0, Krishna Trilogy Born of Blue, Julius Caesar Simple English, 50 Awesome Facts for Kids">
+  <meta name="author" content="Sarnab Sen">
+  <link rel="canonical" href="https://anamikasanjoysen-oss.github.io/sarnabsen.github.io/">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="The Literary World of Sarnab Sen">
+  <meta property="og:description" content="Explore the published catalog of Sarnab Sen — from structured mathematics companions to epic mythology and accessible classics.">
+  <meta property="og:url" content="https://anamikasanjoysen-oss.github.io/sarnabsen.github.io/">
+  <meta property="og:type" content="website">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        ivory: '#FBF9F5',
-                        cream: '#F4EFE6',
-                        charcoal: '#1A1A1A',
-                        gold: {
-                            light: '#DFBD7B',
-                            DEFAULT: '#C5A059',
-                            dark: '#9A7B38'
-                        }
-                    },
-                    fontFamily: {
-                        serif: ['Cinzel', 'serif'],
-                        sans: ['Plus Jakarta Sans', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body { background-color: #FBF9F5; color: #1A1A1A; font-family: 'Plus Jakarta Sans', sans-serif; }
-        .gold-gradient-text {
-            background: linear-gradient(135deg, #DFBD7B 0%, #C5A059 50%, #9A7B38 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .gold-border { border-color: #C5A059; }
-        .gold-bg { background-color: #C5A059; }
-        .gold-bg:hover { background-color: #9A7B38; }
-        .book-card {
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .book-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 35px -10px rgba(197, 160, 89, 0.2);
-        }
-    </style>
+  <style>
+    :root {
+      --bg-primary: #070b14;
+      --bg-secondary: #0f172a;
+      --bg-card: #151e32;
+      --accent-cyan: #00f0ff;
+      --accent-cyan-dim: rgba(0, 240, 255, 0.15);
+      --accent-gold: #f59e0b;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border-subtle: rgba(148, 163, 184, 0.15);
+      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 11, 20, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 1rem 5%;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--text-main);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo span {
+      color: var(--accent-cyan);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    nav a:hover {
+      color: var(--accent-cyan);
+    }
+
+    .btn-admin-nav {
+      background: transparent;
+      border: 1px solid var(--accent-cyan);
+      color: var(--accent-cyan);
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-admin-nav:hover {
+      background: var(--accent-cyan-dim);
+    }
+
+    /* Hero Section */
+    .hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4.5rem 5% 3.5rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-cyan-dim);
+      color: var(--accent-cyan);
+      border: 1px solid rgba(0, 240, 255, 0.3);
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      background: linear-gradient(135deg, #ffffff 30%, var(--accent-cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--accent-cyan);
+      color: #040812;
+      padding: 0.8rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 240, 255, 0.35);
+    }
+
+    .btn-secondary {
+      background: var(--bg-secondary);
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      padding: 0.8rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+    }
+
+    /* Controls & Search Matrix */
+    .catalog-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 5% 4rem;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.85rem;
+      font-weight: 700;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .search-filter-bar {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      padding: 1.25rem;
+      border-radius: 12px;
+      margin-bottom: 2.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .search-input-wrap {
+      position: relative;
+      width: 100%;
+    }
+
+    .search-input-wrap input {
+      width: 100%;
+      padding: 0.85rem 1.2rem;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      color: var(--text-main);
+      font-size: 1rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input-wrap input:focus {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 0 3px var(--accent-cyan-dim);
+    }
+
+    .filter-pills {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: var(--bg-primary);
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--accent-cyan);
+      color: #040812;
+      border-color: var(--accent-cyan);
+    }
+
+    /* Books Grid */
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .book-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .book-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 240, 255, 0.45);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .book-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--accent-cyan);
+      background: var(--accent-cyan-dim);
+      padding: 0.25rem 0.65rem;
+      border-radius: 4px;
+      margin-bottom: 0.85rem;
+      align-self: flex-start;
+    }
+
+    .book-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: #ffffff;
+    }
+
+    .book-card p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .book-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+      gap: 0.75rem;
+    }
+
+    .book-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .btn-details {
+      background: transparent;
+      border: 1px solid var(--accent-cyan);
+      color: var(--accent-cyan);
+      padding: 0.45rem 0.95rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-details:hover {
+      background: var(--accent-cyan);
+      color: #040812;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-muted);
+      grid-column: 1 / -1;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      border: 1px dashed var(--border-subtle);
+    }
+
+    /* About & Calendar Section */
+    .info-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 5% 5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .info-panel {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+
+    .info-panel h2 {
+      font-size: 1.45rem;
+      margin-bottom: 1rem;
+      color: var(--accent-cyan);
+    }
+
+    .info-panel p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .calendar-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .calendar-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg-primary);
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border-left: 3px solid var(--accent-cyan);
+      font-size: 0.9rem;
+    }
+
+    .calendar-date {
+      color: var(--accent-cyan);
+      font-weight: 600;
+      font-size: 0.82rem;
+    }
+
+    /* Modals */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.82);
+      backdrop-filter: blur(6px);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background: var(--bg-secondary);
+      border: 1px solid var(--accent-cyan);
+      border-radius: 14px;
+      width: 100%;
+      max-width: 520px;
+      padding: 2rem;
+      position: relative;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+      animation: modalFadeIn 0.2s ease-out;
+    }
+
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0.25rem 0.5rem;
+    }
+
+    .modal-close:hover {
+      color: var(--accent-cyan);
+    }
+
+    .modal-box h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      color: #ffffff;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      color: var(--text-main);
+      font-size: 0.95rem;
+      font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent-cyan);
+    }
+
+    .error-msg {
+      color: #f87171;
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      display: none;
+    }
+
+    /* Occasion Floating Popup */
+    .occasion-popup {
+      display: none;
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      max-width: 370px;
+      width: calc(100% - 48px);
+      background: linear-gradient(145deg, #11192c, #0a0f1d);
+      border: 1px solid var(--accent-cyan);
+      border-radius: 12px;
+      padding: 1.35rem;
+      z-index: 950;
+      box-shadow: 0 12px 35px rgba(0, 240, 255, 0.2);
+      animation: slideUp 0.35s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .occasion-badge {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--accent-gold);
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      display: block;
+    }
+
+    .occasion-popup h4 {
+      color: var(--accent-cyan);
+      font-size: 1.15rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .occasion-popup p {
+      color: var(--text-main);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .occasion-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 2.5rem 5%;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    footer strong {
+      color: var(--text-main);
+    }
+  </style>
 </head>
-<body class="selection:bg-gold/20 selection:text-charcoal">
+<body>
 
-    <!-- Calendar Festive Occasion Modal -->
-    <div id="festiveModal" class="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/80 backdrop-blur-md hidden">
-        <div class="relative w-full max-w-lg mx-4 bg-ivory border-2 gold-border rounded-2xl p-8 shadow-2xl text-center">
-            <button onclick="closeFestiveModal()" class="absolute top-4 right-4 text-charcoal/60 hover:text-charcoal text-2xl font-serif">&times;</button>
-            <span id="festiveBadge" class="inline-block px-4 py-1 rounded-full text-xs font-semibold tracking-widest uppercase bg-gold/10 text-gold-dark mb-4 border gold-border">Special Occasion Alert</span>
-            <h3 id="festiveTitle" class="text-3xl font-serif font-bold text-charcoal mb-3">Celebrating Today</h3>
-            <p id="festiveMessage" class="text-charcoal/80 text-base leading-relaxed mb-6">Welcome to the Literary World of Sarnab Sen. May this special day fill your journey with curiosity, imagination, and endless stories.</p>
-            <button onclick="closeFestiveModal()" class="w-full py-3 rounded-lg gold-bg text-white font-serif font-semibold tracking-wider uppercase transition shadow-lg">Enter The Literary World</button>
-        </div>
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">The Literary World of <span>Sarnab Sen</span></a>
+      <nav>
+        <ul>
+          <li><a href="#catalog">Published Works</a></li>
+          <li><a href="#about">About Author</a></li>
+          <li><a href="#calendar">Academic &amp; Festival Calendar</a></li>
+          <li><button type="button" class="btn-admin-nav" id="openAdminBtn">Admin Publish</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <span class="badge">Official Author Catalog &bull; <span id="heroYear">2026</span> Edition</span>
+    <h1>Making Complex Ideas Clear, Engaging &amp; Unforgettable</h1>
+    <p>Welcome to the official digital library of <strong>Sarnab Sen</strong>. Explore seven standalone publications spanning problem-solving mathematics, mythological epics, accessible Shakespeare adaptations, and curated trivia for curious minds.</p>
+    <div class="hero-actions">
+      <a href="#catalog" class="btn-primary">Explore All 7 Books</a>
+      <button type="button" class="btn-secondary" id="checkTodayGreetingBtn">View Today's Greeting</button>
+    </div>
+  </section>
+
+  <!-- Catalog & Search Matrix -->
+  <main class="catalog-section" id="catalog">
+    <div class="section-header">
+      <div>
+        <h2>Published Catalog</h2>
+        <p>Filter by genre or search across titles, mathematical topics, and themes.</p>
+      </div>
+      <div class="book-meta" id="bookCountDisplay">Showing 7 of 7 Books</div>
     </div>
 
-    <!-- Admin Passcode Modal -->
-    <div id="adminModal" class="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/80 backdrop-blur-md hidden">
-        <div class="relative w-full max-w-md mx-4 bg-ivory border-2 gold-border rounded-2xl p-8 shadow-2xl">
-            <button onclick="closeAdminModal()" class="absolute top-4 right-4 text-charcoal/60 hover:text-charcoal text-2xl font-serif">&times;</button>
-            <h3 class="text-2xl font-serif font-bold text-charcoal mb-2">Author Verification</h3>
-            <p class="text-sm text-charcoal/70 mb-6">Enter your security passcode to publish new books to the catalog.</p>
-            <form onsubmit="verifyAdminPasscode(event)" class="space-y-4">
-                <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-charcoal/70 mb-2">Passcode</label>
-                    <input type="password" id="adminPassInput" required placeholder="Enter author passcode" class="w-full px-4 py-3 rounded-lg bg-cream border gold-border text-charcoal focus:outline-none focus:ring-2 focus:ring-gold">
-                </div>
-                <div id="adminError" class="text-red-600 text-xs hidden">Incorrect passcode. Please try again.</div>
-                <button type="submit" class="w-full py-3 rounded-lg gold-bg text-white font-serif font-semibold tracking-wider uppercase transition shadow-lg">Authenticate & Publish</button>
-            </form>
-        </div>
+    <div class="search-filter-bar">
+      <div class="search-input-wrap">
+        <input type="text" id="searchInput" placeholder="Search books by title, topic (e.g., Theorems, Krishna, Shakespeare, Facts)..." aria-label="Search books">
+      </div>
+      <div class="filter-pills" id="categoryFilters">
+        <button type="button" class="filter-btn active" data-category="All">All Works</button>
+        <button type="button" class="filter-btn" data-category="Mathematics">Mathematics</button>
+        <button type="button" class="filter-btn" data-category="Fiction & Mythology">Fiction &amp; Mythology</button>
+        <button type="button" class="filter-btn" data-category="Drama & Classics">Drama &amp; Classics</button>
+        <button type="button" class="filter-btn" data-category="General Knowledge">General Knowledge</button>
+      </div>
     </div>
 
-    <!-- Add Book Modal -->
-    <div id="addBookModal" class="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/80 backdrop-blur-md hidden overflow-y-auto py-10">
-        <div class="relative w-full max-w-2xl mx-4 bg-ivory border-2 gold-border rounded-2xl p-8 shadow-2xl my-auto">
-            <button onclick="closeAddBookModal()" class="absolute top-4 right-4 text-charcoal/60 hover:text-charcoal text-2xl font-serif">&times;</button>
-            <h3 class="text-2xl font-serif font-bold text-charcoal mb-2">Publish New Book</h3>
-            <p class="text-sm text-charcoal/70 mb-6">Add a new title. It will instantly create a dedicated book card, genre filter tag, and reflection quote.</p>
-            <form onsubmit="handleNewBookSubmission(event)" class="space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-charcoal/70 mb-1">Book Title</label>
-                        <input type="text" id="newTitle" required placeholder="e.g. MATHS 6.0" class="w-full px-3 py-2 rounded-lg bg-cream border gold-border text-charcoal focus:outline-none">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-charcoal/70 mb-1">Genre / Category</label>
-                        <input type="text" id="newCategory" required placeholder="e.g. Mathematics" class="w-full px-3 py-2 rounded-lg bg-cream border gold-border text-charcoal focus:outline-none">
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-charcoal/70 mb-1">Central Idea / Quote</label>
-                    <input type="text" id="newCentralIdea" required placeholder="e.g. Exploring new frontiers of knowledge." class="w-full px-3 py-2 rounded-lg bg-cream border gold-border text-charcoal focus:outline-none">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-charcoal/70 mb-1">Description</label>
-                    <textarea id="newDescription" rows="3" required placeholder="Book synopsis..." class="w-full px-3 py-2 rounded-lg bg-cream border gold-border text-charcoal focus:outline-none"></textarea>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-charcoal/70 mb-1">Cover Image URL</label>
-                        <input type="url" id="newCover" placeholder="https://..." class="w-full px-3 py-2 rounded-lg bg-cream border gold-border text-charcoal focus:outline-none">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-charcoal/70 mb-1">Amazon Link</label>
-                        <input type="url" id="newAmazon" placeholder="https://amazon.in/..." class="w-full px-3 py-2 rounded-lg bg-cream border gold-border text-charcoal focus:outline-none">
-                    </div>
-                </div>
-                <button type="submit" class="w-full py-3 rounded-lg gold-bg text-white font-serif font-semibold tracking-wider uppercase transition shadow-lg mt-4">Publish Book to Collection</button>
-            </form>
-        </div>
+    <div class="books-grid" id="booksGrid"></div>
+  </main>
+
+  <!-- About & Dynamic School/Festival Calendar -->
+  <section class="info-grid">
+    <div class="info-panel" id="about">
+      <h2>About the Author</h2>
+      <p><strong>Sarnab Sen</strong> is an independent student author, literary adapter, and mathematics enthusiast dedicated to making challenging academic subjects and classic literature approachable for young readers.</p>
+      <p>From breaking down advanced problem-solving strategies in the <em>Maths</em> series to translating William Shakespeare's <em>Julius Caesar</em> into clear, modern English dialogue, every title is structured with precision, clarity, and reader-friendly design.</p>
+      <p><strong>Publishing &amp; Imprint Coordination:</strong> Anamika Sen</p>
     </div>
 
-    <!-- Navigation Header -->
-    <header class="sticky top-0 z-40 bg-ivory/90 backdrop-blur-md border-b border-gold/30">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="font-serif text-xl md:text-2xl font-bold tracking-wider text-charcoal">
-                SARNAB <span class="gold-gradient-text">SEN</span>
-            </a>
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
-                <a href="#books" class="hover:text-gold-dark transition">Books</a>
-                <a href="#about" class="hover:text-gold-dark transition">About</a>
-                <a href="#essence" class="hover:text-gold-dark transition">Philosophy</a>
-                <a href="#reflections" class="hover:text-gold-dark transition">Reflections</a>
-                <a href="#journal" class="hover:text-gold-dark transition">Journal</a>
-                <a href="#contact" class="hover:text-gold-dark transition">Contact</a>
-            </nav>
-            <div class="flex items-center space-x-4">
-                <button onclick="openAdminModal()" class="px-4 py-2 text-xs font-serif uppercase tracking-widest rounded border gold-border text-charcoal hover:bg-gold hover:text-white transition">Admin Publish</button>
-            </div>
-        </div>
-    </header>
+    <div class="info-panel" id="calendar">
+      <h2>Upcoming Calendar &amp; Observances (<span id="calendarYearLabel">2026</span>)</h2>
+      <p>Automatically synchronized with the current date for school observances, national holidays, and major festivals.</p>
+      <ul class="calendar-list" id="upcomingCalendarList"></ul>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-[90vh] flex items-center justify-center bg-cream px-6 overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#C5A059_1px,transparent_1px)] [background-size:24px_24px]"></div>
-        <div class="max-w-4xl mx-auto text-center relative z-10 py-20">
-            <span class="inline-block uppercase tracking-[0.3em] text-xs font-semibold text-gold-dark mb-6 px-4 py-1.5 rounded-full bg-ivory border gold-border">The Official Author Portal</span>
-            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-charcoal tracking-tight mb-6 leading-tight">
-                The Literary World of <span class="gold-gradient-text">Sarnab Sen</span>
-            </h1>
-            <p class="font-serif italic text-xl md:text-2xl text-charcoal/80 mb-10 max-w-2xl mx-auto">
-                "Seven Books. Countless Ideas. One World of Imagination."
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#books" class="w-full sm:w-auto px-8 py-4 rounded-lg gold-bg text-white font-serif font-semibold tracking-wider uppercase shadow-xl hover:opacity-95 transition">Explore All Books</a>
-                <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-lg bg-ivory border gold-border text-charcoal font-serif font-semibold tracking-wider uppercase hover:bg-cream transition">Meet the Author</a>
-            </div>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="footerYear">2026</span> <strong>The Literary World of Sarnab Sen</strong>. All Rights Reserved.</p>
+    <p style="margin-top: 0.4rem; font-size: 0.82rem;">Hosted on GitHub Pages &bull; Dynamic Calendar &amp; Catalog Engine</p>
+  </footer>
 
-    <!-- Books Section -->
-    <section id="books" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <span class="text-xs font-semibold uppercase tracking-widest text-gold-dark block mb-2">Curated Catalog</span>
-            <h2 id="booksSectionTitle" class="font-serif text-4xl font-bold text-charcoal">The Seven Published Works</h2>
-            <div class="w-24 h-1 gold-bg mx-auto mt-4"></div>
-        </div>
+  <!-- Book Details Modal -->
+  <div class="modal-backdrop" id="bookModal" role="dialog" aria-modal="true" aria-labelledby="modalBookTitle">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="closeBookModalBtn" aria-label="Close modal">&times;</button>
+      <span class="book-tag" id="modalBookCategory">Category</span>
+      <h3 id="modalBookTitle">Book Title</h3>
+      <p id="modalBookDesc" style="color: var(--text-muted); margin-bottom: 1.25rem;"></p>
+      <div style="background: var(--bg-primary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; font-size: 0.9rem;">
+        <p style="margin-bottom: 0.4rem;"><strong>Author:</strong> Sarnab Sen</p>
+        <p style="margin-bottom: 0.4rem;"><strong>Imprint Coordinator:</strong> Anamika Sen</p>
+        <p id="modalBookHighlights" style="color: var(--accent-cyan);"></p>
+      </div>
+      <div style="display: flex; justify-content: flex-end;">
+        <button type="button" class="btn-primary" id="closeBookModalFooterBtn">Close Preview</button>
+      </div>
+    </div>
+  </div>
 
-        <!-- Filter & Search Bar -->
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-12">
-            <div id="categoryFilterContainer" class="flex flex-wrap justify-center gap-2">
-                <button onclick="filterBooks('All')" class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider gold-bg text-white transition filter-btn" data-category="All">All Works</button>
-                <button onclick="filterBooks('Mathematics')" class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-cream border gold-border text-charcoal hover:bg-gold hover:text-white transition filter-btn" data-category="Mathematics">Mathematics</button>
-                <button onclick="filterBooks('Mythology')" class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-cream border gold-border text-charcoal hover:bg-gold hover:text-white transition filter-btn" data-category="Mythology">Mythology</button>
-                <button onclick="filterBooks('Classic Literature')" class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-cream border gold-border text-charcoal hover:bg-gold hover:text-white transition filter-btn" data-category="Classic Literature">Classic Literature</button>
-                <button onclick="filterBooks('Children\'s Books')" class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-cream border gold-border text-charcoal hover:bg-gold hover:text-white transition filter-btn" data-category="Children's Books">Children's Books</button>
-            </div>
-            <div class="w-full md:w-72">
-                <input type="text" id="bookSearch" onkeyup="searchBooks()" placeholder="Search titles or themes..." class="w-full px-4 py-2.5 rounded-lg bg-cream border gold-border text-charcoal text-sm focus:outline-none">
-            </div>
-        </div>
+  <!-- Admin Publish Modal -->
+  <div class="modal-backdrop" id="adminModal" role="dialog" aria-modal="true" aria-labelledby="adminModalTitle">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="closeAdminModalBtn" aria-label="Close admin modal">&times;</button>
+      <h3 id="adminModalTitle">Author Publishing Console</h3>
 
-        <!-- Book Grid -->
-        <div id="booksGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Populated via JS -->
+      <!-- Step 1: Passcode Verification -->
+      <div id="adminAuthStep">
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1rem;">Enter your administrative passcode to unlock real-time catalog entry generation.</p>
+        <div class="form-group">
+          <label for="adminPassInput">Administrative Passcode</label>
+          <input type="password" id="adminPassInput" placeholder="Enter passcode..." autocomplete="off">
+          <div class="error-msg" id="adminErrorMsg">Incorrect passcode. Please try again.</div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-24 bg-cream px-6 border-y border-gold/30">
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            <div class="md:col-span-5 relative">
-                <div class="absolute inset-0 border-2 gold-border translate-x-4 translate-y-4 rounded-xl hidden sm:block"></div>
-                <div class="relative bg-ivory p-8 rounded-xl border gold-border shadow-xl text-center">
-                    <div class="w-32 h-32 mx-auto mb-6 rounded-full gold-bg flex items-center text-white font-serif text-4xl font-bold justify-center shadow-lg">SS</div>
-                    <h3 class="font-serif text-2xl font-bold text-charcoal">Sarnab Sen</h3>
-                    <p class="text-xs uppercase tracking-widest text-gold-dark mt-1">Author & Literary Creator</p>
-                </div>
-            </div>
-            <div class="md:col-span-7 space-y-6">
-                <span class="text-xs font-semibold uppercase tracking-widest text-gold-dark block">About the Author</span>
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-charcoal">Writing Across Worlds of Thought</h2>
-                <p class="text-charcoal/80 leading-relaxed">
-                    Sarnab Sen is an author whose published works explore different dimensions of knowledge, imagination, literature, and learning. His books span mathematics, mythology-inspired storytelling, classic literature, and children's knowledge.
-                </p>
-                <p class="text-charcoal/80 leading-relaxed">
-                    Through these diverse literary journeys, he brings together curiosity, creativity, intellectual exploration, and the joy of discovery for readers of all ages.
-                </p>
-                <div class="pt-4 flex gap-4">
-                    <div class="p-4 rounded-lg bg-ivory border gold-border flex-1 text-center">
-                        <span class="block font-serif text-3xl font-bold text-gold-dark" id="statBookCount">7</span>
-                        <span class="text-xs uppercase tracking-wider text-charcoal/70">Published Books</span>
-                    </div>
-                    <div class="p-4 rounded-lg bg-ivory border gold-border flex-1 text-center">
-                        <span class="block font-serif text-3xl font-bold text-gold-dark">100%</span>
-                        <span class="text-xs uppercase tracking-wider text-charcoal/70">Original Works</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Philosophy / Essence Section -->
-    <section id="essence" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <span class="text-xs font-semibold uppercase tracking-widest text-gold-dark block mb-2">Central Vision</span>
-            <h2 class="font-serif text-4xl font-bold text-charcoal">The Essence of My Books</h2>
-            <div class="w-24 h-1 gold-bg mx-auto mt-4"></div>
-            <p class="font-serif italic text-charcoal/70 mt-4 max-w-xl mx-auto">"Seven books. Multiple worlds of thought. From mathematical exploration to mythology, from Shakespeare to children's learning."</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-cream p-8 rounded-xl border gold-border shadow-md">
-                <div class="w-12 h-12 rounded-lg gold-bg text-white flex items-center justify-center font-serif font-bold text-xl mb-6">01</div>
-                <h3 class="font-serif text-xl font-bold text-charcoal mb-3">Mathematical Curiosity</h3>
-                <p class="text-charcoal/80 text-sm leading-relaxed">Mathematics is not just about finding answers; it is about learning how to think, discovering patterns, and appreciating intellectual beauty beyond formulas.</p>
-            </div>
-            <div class="bg-cream p-8 rounded-xl border gold-border shadow-md">
-                <div class="w-12 h-12 rounded-lg gold-bg text-white flex items-center justify-center font-serif font-bold text-xl mb-6">02</div>
-                <h3 class="font-serif text-xl font-bold text-charcoal mb-3">Mythology & Imagination</h3>
-                <p class="text-charcoal/80 text-sm leading-relaxed">Entering timeless cultural and mythological worlds through storytelling, opening a literary journey filled with imagination and timeless cultural heritage.</p>
-            </div>
-            <div class="bg-cream p-8 rounded-xl border gold-border shadow-md">
-                <div class="w-12 h-12 rounded-lg gold-bg text-white flex items-center justify-center font-serif font-bold text-xl mb-6">03</div>
-                <h3 class="font-serif text-xl font-bold text-charcoal mb-3">Accessible Classics & Growth</h3>
-                <p class="text-charcoal/80 text-sm leading-relaxed">Great literature and curious knowledge should be approachable to a new generation, inspiring young minds to ask questions about the world around them.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reflections Section -->
-    <section id="reflections" class="py-24 bg-cream px-6 border-y border-gold/30">
-        <div class="max-w-4xl mx-auto text-center">
-            <span class="text-xs font-semibold uppercase tracking-widest text-gold-dark block mb-2">Author's Reflections</span>
-            <h2 class="font-serif text-4xl font-bold text-charcoal mb-12">Thoughts & Philosophical Insights</h2>
-            
-            <div class="bg-ivory p-10 md:p-14 rounded-2xl border-2 gold-border shadow-xl relative">
-                <span class="absolute top-4 left-6 font-serif text-6xl text-gold/30">“</span>
-                <p id="reflectionQuote" class="font-serif italic text-xl md:text-2xl text-charcoal leading-relaxed mb-6 relative z-10">
-                    "Mathematics is a world of ideas, patterns, logic, and wonder."
-                </p>
-                <p id="reflectionSource" class="text-xs font-semibold uppercase tracking-widest text-gold-dark">— MATHS 4.0: Theorems, Ideas & Mathematical Wonders</p>
-                
-                <div class="flex justify-center gap-4 mt-8">
-                    <button onclick="prevReflection()" class="px-4 py-2 rounded-full border gold-border bg-cream text-charcoal text-xs font-semibold uppercase tracking-wider hover:bg-gold hover:text-white transition">Previous</button>
-                    <button onclick="nextReflection()" class="px-4 py-2 rounded-full border gold-border bg-cream text-charcoal text-xs font-semibold uppercase tracking-wider hover:bg-gold hover:text-white transition">Next Insight</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Literary Journal -->
-    <section id="journal" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <span class="text-xs font-semibold uppercase tracking-widest text-gold-dark block mb-2">Essays & Articles</span>
-            <h2 class="font-serif text-4xl font-bold text-charcoal">Literary Journal</h2>
-            <div class="w-24 h-1 gold-bg mx-auto mt-4"></div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-cream p-8 rounded-xl border gold-border flex flex-col justify-between">
-                <div>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-gold-dark">Essay • November 2026</span>
-                    <h3 class="font-serif text-2xl font-bold text-charcoal mt-2 mb-4">Why Problem-Solving Defines Mathematical Growth</h3>
-                    <p class="text-charcoal/80 text-sm leading-relaxed mb-6">Reflections on how approaching equations not as rigid rules but as open-ended puzzles fosters genuine logical intuition in young learners.</p>
-                </div>
-                <span class="text-xs font-semibold uppercase tracking-widest text-charcoal/60">By Sarnab Sen</span>
-            </div>
-            <div class="bg-cream p-8 rounded-xl border gold-border flex flex-col justify-between">
-                <div>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-gold-dark">Article • October 2026</span>
-                    <h3 class="font-serif text-2xl font-bold text-charcoal mt-2 mb-4">Translating Tragedy: Making Shakespeare Accessible</h3>
-                    <p class="text-charcoal/80 text-sm leading-relaxed mb-6">Exploring the careful balance required to adapt Julius Caesar into simplified modern English without losing the dramatic weight of the original text.</p>
-                </div>
-                <span class="text-xs font-semibold uppercase tracking-widest text-charcoal/60">By Sarnab Sen</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-cream px-6 border-t border-gold/30">
-        <div class="max-w-3xl mx-auto text-center">
-            <span class="text-xs font-semibold uppercase tracking-widest text-gold-dark block mb-2">Get in Touch</span>
-            <h2 class="font-serif text-4xl font-bold text-charcoal mb-4">Contact & Inquiries</h2>
-            <p class="text-charcoal/80 mb-10">For publishing inquiries, school events, or reader correspondence, reach out directly.</p>
-            
-            <div class="bg-ivory p-8 md:p-12 rounded-2xl border gold-border shadow-xl">
-                <form action="mailto:senanamika.1683@gmail.com" method="POST" enctype="text/plain" class="space-y-6 text-left">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-xs font-semibold uppercase tracking-wider text-charcoal/70 mb-2">Your Name</label>
-                            <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg bg-cream border gold-border text-charcoal focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Enter your name">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold uppercase tracking-wider text-charcoal/70 mb-2">Your Email</label>
-                            <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-cream border gold-border text-charcoal focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Enter your email">
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-charcoal/70 mb-2">Message</label>
-                        <textarea name="message" rows="4" required class="w-full px-4 py-3 rounded-lg bg-cream border gold-border text-charcoal focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Your message here..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full py-4 rounded-lg gold-bg text-white font-serif font-semibold tracking-wider uppercase transition shadow-lg">Send Message to Author</button>
-                </form>
-                <div class="mt-6 pt-6 border-t border-gold/20 text-center">
-                    <p class="text-xs uppercase tracking-wider text-charcoal/70">Official Coordinator Email: <a href="mailto:senanamika.1683@gmail.com" class="text-gold-dark font-semibold underline">senanamika.1683@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 bg-charcoal text-ivory text-center">
-        <div class="max-w-7xl mx-auto px-6">
-            <p class="font-serif text-xl font-bold tracking-wider mb-4">SARNAB <span class="gold-gradient-text">SEN</span></p>
-            <p class="text-xs text-ivory/60 tracking-widest uppercase mb-6">"Seven Books. Countless Ideas. One World of Imagination."</p>
-            <p class="text-xs text-ivory/40">&copy; <span id="footerYear">2026</span> Sarnab Sen. All rights reserved. Published works available on Amazon.</p>
-        </div>
-    </footer>
-
-    <!-- Book Detail Modal -->
-    <div id="bookModal" class="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/80 backdrop-blur-md hidden p-4">
-        <div class="relative w-full max-w-2xl bg-ivory border-2 gold-border rounded-2xl p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
-            <button onclick="closeBookModal()" class="absolute top-4 right-4 text-charcoal/60 hover:text-charcoal text-2xl font-serif">&times;</button>
+        <button type="button" class="btn-primary" id="verifyPassBtn" style="width: 100%;">Unlock Console
