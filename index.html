@@ -3,189 +3,702 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Literary World of Sarnab Sen</title>
+  <title>The Literary World of Sarnab Sen | Author Portfolio</title>
+  <meta name="description" content="Official author website of Sarnab Sen. Explore educational mathematics companions, mythological fiction, Shakespeare adaptations, and curated knowledge collections.">
+  <meta name="keywords" content="Sarnab Sen, Sarnab Sen Author Website, Maths 5.0, Maths 4.0, Krishna Trilogy Born of Blue, Julius Caesar Simple English, 50 Awesome Facts for Kids">
+  <meta name="author" content="Sarnab Sen">
+  <link rel="canonical" href="https://anamikasanjoysen-oss.github.io/sarnabsen.github.io/">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="The Literary World of Sarnab Sen">
+  <meta property="og:description" content="Explore the published catalog of Sarnab Sen — from structured mathematics companions to epic mythology and accessible classics.">
+  <meta property="og:url" content="https://anamikasanjoysen-oss.github.io/sarnabsen.github.io/">
+  <meta property="og:type" content="website">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --bg-primary: #070b14;
+      --bg-secondary: #0f172a;
+      --bg-card: #151e32;
+      --accent-cyan: #00f0ff;
+      --accent-cyan-dim: rgba(0, 240, 255, 0.15);
+      --accent-gold: #f59e0b;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border-subtle: rgba(148, 163, 184, 0.15);
+      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #070b14;
-      color: #f1f5f9;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
     header {
-      background: #0f172a;
-      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 11, 20, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 1rem 5%;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--text-main);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo span {
+      color: var(--accent-cyan);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    nav a:hover {
+      color: var(--accent-cyan);
+    }
+
+    .btn-admin-nav {
+      background: transparent;
+      border: 1px solid var(--accent-cyan);
+      color: var(--accent-cyan);
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-admin-nav:hover {
+      background: var(--accent-cyan-dim);
+    }
+
+    /* Hero Section */
+    .hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4.5rem 5% 3.5rem;
       text-align: center;
-      border-bottom: 1px solid #1e293b;
+      position: relative;
     }
-    h1 {
-      margin: 0;
-      color: #00f0ff;
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-cyan-dim);
+      color: var(--accent-cyan);
+      border: 1px solid rgba(0, 240, 255, 0.3);
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
     }
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      background: linear-gradient(135deg, #ffffff 30%, var(--accent-cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-    .book-card {
-      background: #151e32;
-      border: 1px solid #1e293b;
-      padding: 20px;
-      margin-bottom: 15px;
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--accent-cyan);
+      color: #040812;
+      padding: 0.8rem 1.75rem;
       border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: var(--transition);
     }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 240, 255, 0.35);
+    }
+
+    .btn-secondary {
+      background: var(--bg-secondary);
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      padding: 0.8rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+    }
+
+    /* Controls & Search Matrix */
+    .catalog-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 5% 4rem;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.85rem;
+      font-weight: 700;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .search-filter-bar {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      padding: 1.25rem;
+      border-radius: 12px;
+      margin-bottom: 2.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .search-input-wrap {
+      position: relative;
+      width: 100%;
+    }
+
+    .search-input-wrap input {
+      width: 100%;
+      padding: 0.85rem 1.2rem;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      color: var(--text-main);
+      font-size: 1rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input-wrap input:focus {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 0 3px var(--accent-cyan-dim);
+    }
+
+    .filter-pills {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: var(--bg-primary);
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--accent-cyan);
+      color: #040812;
+      border-color: var(--accent-cyan);
+    }
+
+    /* Books Grid */
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .book-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .book-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 240, 255, 0.45);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .book-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--accent-cyan);
+      background: var(--accent-cyan-dim);
+      padding: 0.25rem 0.65rem;
+      border-radius: 4px;
+      margin-bottom: 0.85rem;
+      align-self: flex-start;
+    }
+
     .book-card h3 {
-      margin-top: 0;
-      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: #ffffff;
     }
+
     .book-card p {
-      color: #94a3b8;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
     }
-    /* Simple Popup */
-    #occasion-banner {
+
+    .book-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+      gap: 0.75rem;
+    }
+
+    .book-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .btn-details {
+      background: transparent;
+      border: 1px solid var(--accent-cyan);
+      color: var(--accent-cyan);
+      padding: 0.45rem 0.95rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-details:hover {
+      background: var(--accent-cyan);
+      color: #040812;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-muted);
+      grid-column: 1 / -1;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      border: 1px dashed var(--border-subtle);
+    }
+
+    /* About & Calendar Section */
+    .info-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 5% 5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .info-panel {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+
+    .info-panel h2 {
+      font-size: 1.45rem;
+      margin-bottom: 1rem;
+      color: var(--accent-cyan);
+    }
+
+    .info-panel p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .calendar-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .calendar-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg-primary);
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border-left: 3px solid var(--accent-cyan);
+      font-size: 0.9rem;
+    }
+
+    .calendar-date {
+      color: var(--accent-cyan);
+      font-weight: 600;
+      font-size: 0.82rem;
+    }
+
+    /* Modals */
+    .modal-backdrop {
       display: none;
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #151e32;
-      color: #00f0ff;
-      padding: 20px;
-      border: 1px solid #00f0ff;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      inset: 0;
+      background: rgba(3, 7, 18, 0.82);
+      backdrop-filter: blur(6px);
       z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
     }
-    #occasion-banner button {
-      background: #00f0ff;
-      color: #070b14;
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background: var(--bg-secondary);
+      border: 1px solid var(--accent-cyan);
+      border-radius: 14px;
+      width: 100%;
+      max-width: 520px;
+      padding: 2rem;
+      position: relative;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+      animation: modalFadeIn 0.2s ease-out;
+    }
+
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: transparent;
       border: none;
-      padding: 6px 12px;
-      margin-top: 10px;
+      color: var(--text-muted);
+      font-size: 1.5rem;
       cursor: pointer;
-      font-weight: bold;
-      border-radius: 4px;
+      line-height: 1;
+      padding: 0.25rem 0.5rem;
+    }
+
+    .modal-close:hover {
+      color: var(--accent-cyan);
+    }
+
+    .modal-box h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      color: #ffffff;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      color: var(--text-main);
+      font-size: 0.95rem;
+      font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent-cyan);
+    }
+
+    .error-msg {
+      color: #f87171;
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      display: none;
+    }
+
+    /* Occasion Floating Popup */
+    .occasion-popup {
+      display: none;
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      max-width: 370px;
+      width: calc(100% - 48px);
+      background: linear-gradient(145deg, #11192c, #0a0f1d);
+      border: 1px solid var(--accent-cyan);
+      border-radius: 12px;
+      padding: 1.35rem;
+      z-index: 950;
+      box-shadow: 0 12px 35px rgba(0, 240, 255, 0.2);
+      animation: slideUp 0.35s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .occasion-badge {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--accent-gold);
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      display: block;
+    }
+
+    .occasion-popup h4 {
+      color: var(--accent-cyan);
+      font-size: 1.15rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .occasion-popup p {
+      color: var(--text-main);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .occasion-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 2.5rem 5%;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    footer strong {
+      color: var(--text-main);
     }
   </style>
 </head>
 <body>
 
+  <!-- Header Navigation -->
   <header>
-    <h1>The Literary World of Sarnab Sen</h1>
-    <p>Official Author Portfolio</p>
+    <div class="nav-container">
+      <a href="#" class="logo">The Literary World of <span>Sarnab Sen</span></a>
+      <nav>
+        <ul>
+          <li><a href="#catalog">Published Works</a></li>
+          <li><a href="#about">About Author</a></li>
+          <li><a href="#calendar">Academic &amp; Festival Calendar</a></li>
+          <li><button type="button" class="btn-admin-nav" id="openAdminBtn">Admin Publish</button></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div class="container">
-    <h2>Published Books</h2>
-    
-    <div class="book-card">
-      <h3>MATHS 5.0: The Complete Problem-Solving Companion</h3>
-      <p>A comprehensive problem-solving guide packed with structured methods and analytical techniques.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <span class="badge">Official Author Catalog &bull; <span id="heroYear">2026</span> Edition</span>
+    <h1>Making Complex Ideas Clear, Engaging &amp; Unforgettable</h1>
+    <p>Welcome to the official digital library of <strong>Sarnab Sen</strong>. Explore seven standalone publications spanning problem-solving mathematics, mythological epics, accessible Shakespeare adaptations, and curated trivia for curious minds.</p>
+    <div class="hero-actions">
+      <a href="#catalog" class="btn-primary">Explore All 7 Books</a>
+      <button type="button" class="btn-secondary" id="checkTodayGreetingBtn">View Today's Greeting</button>
+    </div>
+  </section>
+
+  <!-- Catalog & Search Matrix -->
+  <main class="catalog-section" id="catalog">
+    <div class="section-header">
+      <div>
+        <h2>Published Catalog</h2>
+        <p>Filter by genre or search across titles, mathematical topics, and themes.</p>
+      </div>
+      <div class="book-meta" id="bookCountDisplay">Showing 7 of 7 Books</div>
     </div>
 
-    <div class="book-card">
-      <h3>MATHS 4.0: Theorems, Ideas & Mathematical Wonders</h3>
-      <p>An exploration of foundational theorems and mathematical patterns.</p>
+    <div class="search-filter-bar">
+      <div class="search-input-wrap">
+        <input type="text" id="searchInput" placeholder="Search books by title, topic (e.g., Theorems, Krishna, Shakespeare, Facts)..." aria-label="Search books">
+      </div>
+      <div class="filter-pills" id="categoryFilters">
+        <button type="button" class="filter-btn active" data-category="All">All Works</button>
+        <button type="button" class="filter-btn" data-category="Mathematics">Mathematics</button>
+        <button type="button" class="filter-btn" data-category="Fiction & Mythology">Fiction &amp; Mythology</button>
+        <button type="button" class="filter-btn" data-category="Drama & Classics">Drama &amp; Classics</button>
+        <button type="button" class="filter-btn" data-category="General Knowledge">General Knowledge</button>
+      </div>
     </div>
 
-    <div class="book-card">
-      <h3>KRISHNA TRILOGY: BOOK 1 – BORN OF BLUE</h3>
-      <p>The opening installment of an epic mythological adventure.</p>
+    <div class="books-grid" id="booksGrid"></div>
+  </main>
+
+  <!-- About & Dynamic School/Festival Calendar -->
+  <section class="info-grid">
+    <div class="info-panel" id="about">
+      <h2>About the Author</h2>
+      <p><strong>Sarnab Sen</strong> is an independent student author, literary adapter, and mathematics enthusiast dedicated to making challenging academic subjects and classic literature approachable for young readers.</p>
+      <p>From breaking down advanced problem-solving strategies in the <em>Maths</em> series to translating William Shakespeare's <em>Julius Caesar</em> into clear, modern English dialogue, every title is structured with precision, clarity, and reader-friendly design.</p>
+      <p><strong>Publishing &amp; Imprint Coordination:</strong> Anamika Sen</p>
     </div>
 
-    <div class="book-card">
-      <h3>Julius Caesar: Shakespeare in Simple English</h3>
-      <p>Classic political tragedy adapted into clear, modern English dialogue.</p>
+    <div class="info-panel" id="calendar">
+      <h2>Upcoming Calendar &amp; Observances (<span id="calendarYearLabel">2026</span>)</h2>
+      <p>Automatically synchronized with the current date for school observances, national holidays, and major festivals.</p>
+      <ul class="calendar-list" id="upcomingCalendarList"></ul>
     </div>
+  </section>
 
-    <div class="book-card">
-      <h3>Maths 2.0: Discovering A New Side of Mathematics</h3>
-      <p>Visual and logical beauty behind everyday numbers.</p>
-    </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="footerYear">2026</span> <strong>The Literary World of Sarnab Sen</strong>. All Rights Reserved.</p>
+    <p style="margin-top: 0.4rem; font-size: 0.82rem;">Hosted on GitHub Pages &bull; Dynamic Calendar &amp; Catalog Engine</p>
+  </footer>
 
-    <div class="book-card">
-      <h3>Maths 3.0: Unleashing A New Chapter of Mathematics</h3>
-      <p>Bridges core concepts with higher-order reasoning.</p>
-    </div>
-
-    <div class="book-card">
-      <h3>50 AWESOME FACTS FOR KIDS</h3>
-      <p>Verified trivia spanning science, space, history, and nature.</p>
+  <!-- Book Details Modal -->
+  <div class="modal-backdrop" id="bookModal" role="dialog" aria-modal="true" aria-labelledby="modalBookTitle">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="closeBookModalBtn" aria-label="Close modal">&times;</button>
+      <span class="book-tag" id="modalBookCategory">Category</span>
+      <h3 id="modalBookTitle">Book Title</h3>
+      <p id="modalBookDesc" style="color: var(--text-muted); margin-bottom: 1.25rem;"></p>
+      <div style="background: var(--bg-primary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; font-size: 0.9rem;">
+        <p style="margin-bottom: 0.4rem;"><strong>Author:</strong> Sarnab Sen</p>
+        <p style="margin-bottom: 0.4rem;"><strong>Imprint Coordinator:</strong> Anamika Sen</p>
+        <p id="modalBookHighlights" style="color: var(--accent-cyan);"></p>
+      </div>
+      <div style="display: flex; justify-content: flex-end;">
+        <button type="button" class="btn-primary" id="closeBookModalFooterBtn">Close Preview</button>
+      </div>
     </div>
   </div>
 
-  <!-- Occasion Popup Banner -->
-  <div id="occasion-banner">
-    <h3 id="occasion-title" style="margin:0 0 8px 0;"></h3>
-    <p id="occasion-message" style="margin:0 0 10px 0; color:#fff;"></p>
-    <button onclick="closeBanner()">Close</button>
-  </div>
+  <!-- Admin Publish Modal -->
+  <div class="modal-backdrop" id="adminModal" role="dialog" aria-modal="true" aria-labelledby="adminModalTitle">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="closeAdminModalBtn" aria-label="Close admin modal">&times;</button>
+      <h3 id="adminModalTitle">Author Publishing Console</h3>
 
-  <script>
-    function closeBanner() {
-      document.getElementById("occasion-banner").style.display = "none";
-    }
-
-    function checkOccasion() {
-      const today = new Date();
-      const year = today.getFullYear();
-      const month = today.getMonth() + 1;
-      const day = today.getDate();
-
-      let title = "";
-      let message = "";
-
-      // 1. Fixed Holidays (Repeat Every Year)
-      if (month === 11 && day === 14) {
-        title = "Happy Children's Day!";
-        message = "Celebrating curiosity, imagination, and the joy of reading.";
-      } 
-      else if (month === 12 && (day === 24 || day === 25)) {
-        title = "Merry Christmas!";
-        message = "Wishing you warmth, joy, and wonderful stories this holiday season.";
-      } 
-      else if ((month === 12 && day === 31) || (month === 1 && day === 1)) {
-        const nextYear = month === 12 ? year + 1 : year;
-        title = `Happy New Year ${nextYear}!`;
-        message = `Welcome to a brand-new chapter of learning and discovery in ${nextYear}.`;
-      }
-
-      // 2. 2026 Lunar Festivals
-      else if (year === 2026 && month === 11 && day >= 15 && day <= 20) {
-        title = "Happy Chhat Puja!";
-        message = "Wishing you and your family peace, prosperity, and blessings.";
-      }
-
-      // 3. 2027 Lunar Festivals & School Calendar
-      else if (year === 2027 && month === 1 && (day === 31 || day === 1)) {
-        title = "Happy Saraswati Puja!";
-        message = "May Goddess Saraswati bless all students with wisdom and knowledge.";
-      }
-      else if (year === 2027 && month === 4 && day === 15) {
-        title = "Subho Noboborsho!";
-        message = "Wishing you happiness, good health, and success in the new year.";
-      }
-      else if (year === 2027 && month === 10 && day >= 16 && day <= 20) {
-        title = "Subho Bijoya & Happy Durga Puja!";
-        message = "Wishing you joy, strength, and festive cheer.";
-      } 
-      else if (year === 2027 && month === 10 && day >= 28 && day <= 30) {
-        title = "Happy Diwali!";
-        message = "May the festival of lights illuminate your path with knowledge and happiness.";
-      } 
-      else if (year === 2027 && month === 11 && day >= 2 && day <= 5) {
-        title = "Happy Chhat Puja!";
-        message = "Wishing you and your family peace, prosperity, and blessings.";
-      }
-
-      if (title !== "") {
-        document.getElementById("occasion-title").innerText = title;
-        document.getElementById("occasion-message").innerText = message;
-        document.getElementById("occasion-banner").style.display = "block";
-      }
-    }
-
-    window.onload = checkOccasion;
-  </script>
-
-</body>
-</html>
+      <!-- Step 1: Passcode Verification -->
+      <div id="adminAuthStep">
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1rem;">Enter your administrative passcode to unlock real-time catalog entry generation.</p>
+        <div class="form-group">
+          <label for="adminPassInput">Administrative Passcode</label>
+          <input type="password" id="adminPassInput" placeholder="Enter passcode..." autocomplete="off">
+          <div class="error-msg" id="adminErrorMsg">Incorrect passcode. Please try again.</div>
+        </div>
+        <button type="button" class="btn-primary" id="verifyPassBtn" style="width: 100%;">Unlock Console
